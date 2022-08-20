@@ -22,7 +22,8 @@ try{
 
   else{
     const Token = newToken(user);
-    return res.send({token:Token,error:false});
+   //  return res.send({token:Token,error:false});
+   return res.send({token:Token,error:false,email:user.email});
   }
 }
 catch(err) {
